@@ -7,39 +7,39 @@
         ],
         "contents": [
             {
-                "hash": "ON001",
+                "id": 1,
                 "title": "Alfabeto Onâmico",
-                "content": "data/content/languages/onamico/alphabetOnamico.md"
+                "content": "app/data/content/languages/onamico/alphabetOnamico.md"
             },
             {
-                "hash": "ON002",
+                "id": 2,
                 "title": "Origem",
-                "content": "data/content/languages/onamico/origem.md"
+                "content": "app/data/content/languages/onamico/origem.md"
             },
             {
-                "hash": "ON003",
+                "id": 3,
                 "title": "Pronomes",
-                "content": "data/content/languages/onamico/pronomes.md"
+                "content": "app/data/content/languages/onamico/pronomes.md"
             },
             {
-                "hash": "ON004",
+                "id": 4,
                 "title": "Presente Simples",
-                "content": "data/content/languages/onamico/presenteSimples.md"
+                "content": "app/data/content/languages/onamico/presenteSimples.md"
             },
             {
-                "hash": "ON005",
+                "id": 5,
                 "title": "Tempo Verbal e Pronominal",
-                "content": "data/content/languages/onamico/tempoVerbalPronominal.md"
+                "content": "app/data/content/languages/onamico/tempoVerbalPronominal.md"
             },
             {
-                "hash": "ON006",
+                "id": 6,
                 "title": "Casos Gramaticais e Preposições",
-                "content": "data/content/languages/onamico/casosGramaticaisPreposições.md"
+                "content": "app/data/content/languages/onamico/casosGramaticaisPreposições.md"
             },
             {
-                "hash": "ON007",
+                "id": 7,
                 "title": "Fragmentos",
-                "content": "data/content/languages/onamico/fragmentos.md"
+                "content": "app/data/content/languages/onamico/fragmentos.md"
             }
         ]
     }

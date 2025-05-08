@@ -19,11 +19,13 @@ def loadLanguage():
     
     
     
-    
+# Get Everything
 @router.get('/', response_model=list[Language])
 def loadLanguages():
     return loadLanguage()
 
+
+# Get one language
 @router.get('/{id}', response_model=Language)
 def getLanguage(id: int):
     languages = loadLanguages()
@@ -34,6 +36,7 @@ def getLanguage(id: int):
     raise HTTPException(status_code=404, detail="Dado não encontrado")
 
 
+# Get one content language
 @router.get('/{id}/content', response_model=list)
 def getContent(id: int):
     languages = loadLanguages()
@@ -44,6 +47,7 @@ def getContent(id: int):
     raise HTTPException(status_code=404, detail="Content not founded.")
 
 
+# Get all topics of a language
 @router.get('/{id}/content/title', response_model=list)
 def getTitles(id: int):
     languages = loadLanguages()
@@ -54,14 +58,14 @@ def getTitles(id: int):
         
  
  
-    
-@router.get('/{id}/content/{hash}', response_class=HTMLResponse)
-def getHTML(id: int, hash: str):
+# Get the markdown of one language   
+@router.get('/{id}/content/{id_topic}', response_class=HTMLResponse)
+def getHTML(id: int, id_topic: int):
     languages = loadLanguages()
     
     for lang in languages:
         if lang.id == id:
-            match = next((i for i in lang.contents if i['hash'] == hash), None)
+            match = next((i for i in lang.contents if i['id'] == id_topic), None)
 
             if match:
                 pathContent = match['content']
@@ -74,8 +78,9 @@ def getHTML(id: int, hash: str):
                 
                 html = markdown.markdown(mdContent)
                 return HTMLResponse(content=html)
+            
             else:
-                raise HTTPException(status_code=404, detail="hash not found")
+                raise HTTPException(status_code=404, detail="id_topic not found")
         
     
     raise HTTPException(status_code=404, detail="Id not found")

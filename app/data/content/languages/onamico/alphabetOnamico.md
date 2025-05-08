@@ -103,6 +103,3 @@ A Terceira Camada, O Espiritual. Todas as letras são referentes a coisas espiri
 **Erah** ( /êra/ ) <br>
 **Significados:** Paz, Infinito <br>
 **Valor Numérico:** 100000 <br>
-
-
-![image](/static/images/AlfabetoOnamico.jpg)
